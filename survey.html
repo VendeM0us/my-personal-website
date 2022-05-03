@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey</title>
+  </head>
+
+  <body>
+    <div class="navigation">
+      <a href="./index.html">About Me</a>
+      <a href="./survey.html">Survey</a>
+      <a href="./ranking.html">My Top 5 Website</a>
+      <a href="./favorites.html">My Favorite Animes</a>
+    </div>
+
+    <main>
+      <div class="survey-header">
+        <h1>Let me know more about you!<br>Answer this form so I can know more about you!</h1>
+      </div>
+
+      <img src="./images/curious-chitanda.gif" alt="a cute curious anime waifu">
+
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Let me know you!</legend>
+
+          <label for="name">What is your name?</label><br>
+          <input type="text" id="name" placeholder="Type your name here..." name="name">
+
+          <br>
+
+          <label for="nickname">What do you want me to call you?</label><br>
+          <input type="text" id="nickname" placeholder="Type your nickname here..." name="nickname">
+
+          <br>
+
+          <p>Do you consume something listed below? (*´∀｀*)</p>
+          <input type="checkbox" id="manga" name="interest" value="manga">
+          <label for="manga">Manga</label><br>
+          <input type="checkbox" id="anime" name="interest" value="anime">
+          <label for="anime">Anime</label><br>
+          <input type="checkbox" id="light-novel" name="interest" value="light-novel">
+          <label for="light-novel">Light Novel</label><br>
+          <input type="checkbox" id="visual-novel" name="interest" value="visual-novel">
+          <label for="visual-novel">Visual Novel</label><br>
+          <input type="checkbox" id="videogames" name="interest" value="videogames">
+          <label for="videogames">Video Games</label><br>
+
+          <label for="additional-info">Let me know more about you! Type something about yourself in the textbox.</label><br>
+          <textarea id="additional-info" name="additional-info" placeholder="tell me more something about yourself." rows="5" cols="35"></textarea>
+        </fieldset>
+      </form>
+    </main>
+
+    <footer>
+      <img src="./images/app-academy-logo.png" alt="app academy logo">
+      <p>This is a project from App Academy Open</p>
+    </footer>
+  </body>
+</html>
