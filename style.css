@@ -2,4 +2,107 @@
 
 :root {
   font-family: 'Montserrat', sans-serif;
+  background-color: #F7F7FF;
+}
+
+.navigation {
+  position: sticky;
+  background-color: #0B5351;
+  padding: 0.5em 0;
+  top: 0;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.flex-container > a {
+  text-decoration: none;
+  color: #F7F7FF;
+  font-size: 1.3em;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+}
+
+.flex-container > a:hover {
+  background-color: #2f7c7a;
+}
+
+.main-header {
+  width: 60%;
+  margin: 3em auto 2em auto;
+  background-color: #0B5351;
+  color: #F7F7FF;
+  text-align: center;
+  padding: 0.75em 0.50em;
+  font-size: 0.90em;
+  border-radius: 20px;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  width: 60%;
+}
+
+.contact > p {
+  margin-right: auto;
+}
+
+.contact a > img {
+  margin-right: 3em;
+  height: 2em;
+  width: 2em;
+  padding: 0.5em;
+  border-radius: 50%;
+}
+
+.contact a > img:hover {
+  background-color: rgb(211, 210, 210);
+}
+
+.my-picture {
+  margin: auto;
+  width: 60%;
+}
+
+.my-picture > img {
+  width: 100%;
+}
+
+.about-me {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  margin: auto;
+  width: 60%;
+}
+
+.about-me div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-me div > img {
+  box-sizing: border-box;
+  padding: 5% 0;
+  width: 75%;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+  background-color: rgb(211, 210, 210);
+}
+
+footer > img {
+  width: 5%;
+  padding: 2%;
 }
