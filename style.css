@@ -6,7 +6,8 @@
 }
 
 .navigation {
-  position: sticky;
+  position: fixed;
+  width: 100%;
   background-color: #0B5351;
   padding: 0.5em 0;
   top: 0;
@@ -32,7 +33,7 @@
 
 .main-header {
   width: 60%;
-  margin: 3em auto 2em auto;
+  margin: 6em auto 2em auto;
   background-color: #0B5351;
   color: #F7F7FF;
   text-align: center;
@@ -65,8 +66,8 @@
 }
 
 .my-picture {
-  margin: auto;
-  width: 60%;
+  margin: 2em auto;
+  width: 50%;
 }
 
 .my-picture > img {
@@ -107,15 +108,6 @@ footer > img {
   padding: 2%;
 }
 
-img[src="./images/curious-chitanda.gif"] {
-  display: block;
-  margin: auto;
-  width: 60%;
-  box-sizing: border-box;
-  border: 0.5em solid #2f7c7a;
-  border-radius: 25px;
-}
-
 fieldset {
   margin: 2em auto 0;
   width: 60%;
@@ -154,7 +146,7 @@ fieldset > legend {
   outline-color: #0B5351;
 }
 
-.ranking-intro {
+.ranking-intro, .favorites-intro {
   width: 60%;
   margin: auto;
 }
@@ -196,4 +188,49 @@ fieldset > legend {
 
 .website-description > p {
   width: 65%;
+}
+
+img[src="./images/umaru-chan-watching.png"], img[src="./images/curious-chitanda.gif"] {
+  display: block;
+  margin: auto;
+  width: 40%;
+}
+
+.anime-list {
+  box-sizing: border-box;
+  padding: 2em 0;
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+  margin: auto;
+  width: 90%;
+  background-color: rgb(211, 210, 210);
+  border-radius: 25px;
+}
+
+.anime-picture {
+  display: block;
+  margin: auto;
+  padding: 0.5em;
+  border-radius: 10px;
+  width: 50%;
+}
+
+.anime-picture:hover {
+  background-color: #2f7c7a;
+}
+
+.anime-list div {
+  padding: 1em;
+  background-color: rgb(161, 159, 159);
+  margin: auto;
+  width: 80%;
+  border-radius: 25px;
+
+}
+
+.anime-list div > p {
+  color: #F7F7FF;
+  text-align: justify;
+  width: 75%;
+  margin: auto;
 }
