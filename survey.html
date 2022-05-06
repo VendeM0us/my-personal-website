@@ -22,36 +22,56 @@
         <h1>Let me know more about you!<br>Answer this form so I can know more about you!</h1>
       </div>
 
-      <img src="./images/curious-chitanda.gif" alt="a cute curious anime waifu">
+      <img src="./images/curious-chitanda.gif" alt="a cute curious anime waifu" title="Ain't Chitanda so cute???">
 
       <form action="#" method="post">
         <fieldset>
           <legend>Let me know you!</legend>
 
-          <label for="name">What is your name?</label><br>
-          <input type="text" id="name" placeholder="Type your name here..." name="name">
+          <div class="center-form">
+            <label for="name">What is your name?</label><br>
+            <input type="text" id="name" placeholder="Type your name here..." name="name">
+          </div>
 
-          <br>
+          <div class="center-form">
+            <label for="nickname">What do you want me to call you?</label><br>
+            <input type="text" id="nickname" placeholder="Type your nickname here..." name="nickname">
+          </div>
 
-          <label for="nickname">What do you want me to call you?</label><br>
-          <input type="text" id="nickname" placeholder="Type your nickname here..." name="nickname">
+          <div class="center-form">
+            <p>Do you consume something listed below? (*´∀｀*)</p>
+            <div class="checkboxes">
+              <div>
+                <input type="checkbox" id="manga" name="interest" value="manga">
+                <label for="manga">Manga</label>
+              </div>
 
-          <br>
+              <div>
+                <input type="checkbox" id="anime" name="interest" value="anime">
+                <label for="anime">Anime</label>
+              </div>
 
-          <p>Do you consume something listed below? (*´∀｀*)</p>
-          <input type="checkbox" id="manga" name="interest" value="manga">
-          <label for="manga">Manga</label><br>
-          <input type="checkbox" id="anime" name="interest" value="anime">
-          <label for="anime">Anime</label><br>
-          <input type="checkbox" id="light-novel" name="interest" value="light-novel">
-          <label for="light-novel">Light Novel</label><br>
-          <input type="checkbox" id="visual-novel" name="interest" value="visual-novel">
-          <label for="visual-novel">Visual Novel</label><br>
-          <input type="checkbox" id="videogames" name="interest" value="videogames">
-          <label for="videogames">Video Games</label><br>
+              <div>
+                <input type="checkbox" id="light-novel" name="interest" value="light-novel">
+                <label for="light-novel">Light Novel</label>
+              </div>
 
-          <label for="additional-info">Let me know more about you! Type something about yourself in the textbox.</label><br>
-          <textarea id="additional-info" name="additional-info" placeholder="tell me more something about yourself." rows="5" cols="35"></textarea>
+              <div>
+                <input type="checkbox" id="visual-novel" name="interest" value="visual-novel">
+                <label for="visual-novel">Visual Novel</label>
+              </div>
+
+              <div>
+                <input type="checkbox" id="videogames" name="interest" value="videogames">
+                <label for="videogames">Video Games</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="center-form">
+            <label for="additional-info">Let me know more about you! Type something about yourself in the textbox.</label><br><br>
+            <textarea id="additional-info" name="additional-info" placeholder="tell me more something about yourself." rows="5" cols="35"></textarea>
+          </div>
         </fieldset>
       </form>
     </main>
